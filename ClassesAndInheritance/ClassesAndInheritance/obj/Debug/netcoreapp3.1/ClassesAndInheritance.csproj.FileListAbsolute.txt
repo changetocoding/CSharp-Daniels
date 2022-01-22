@@ -1,0 +1,13 @@
+C:\Dev\repos\Lessons\ClassesAndInheritance\ClassesAndInheritance\bin\Debug\netcoreapp3.1\ClassesAndInheritance.exe
+C:\Dev\repos\Lessons\ClassesAndInheritance\ClassesAndInheritance\bin\Debug\netcoreapp3.1\ClassesAndInheritance.deps.json
+C:\Dev\repos\Lessons\ClassesAndInheritance\ClassesAndInheritance\bin\Debug\netcoreapp3.1\ClassesAndInheritance.runtimeconfig.json
+C:\Dev\repos\Lessons\ClassesAndInheritance\ClassesAndInheritance\bin\Debug\netcoreapp3.1\ClassesAndInheritance.runtimeconfig.dev.json
+C:\Dev\repos\Lessons\ClassesAndInheritance\ClassesAndInheritance\bin\Debug\netcoreapp3.1\ClassesAndInheritance.dll
+C:\Dev\repos\Lessons\ClassesAndInheritance\ClassesAndInheritance\bin\Debug\netcoreapp3.1\ClassesAndInheritance.pdb
+C:\Dev\repos\Lessons\ClassesAndInheritance\ClassesAndInheritance\obj\Debug\netcoreapp3.1\ClassesAndInheritance.csprojAssemblyReference.cache
+C:\Dev\repos\Lessons\ClassesAndInheritance\ClassesAndInheritance\obj\Debug\netcoreapp3.1\ClassesAndInheritance.AssemblyInfoInputs.cache
+C:\Dev\repos\Lessons\ClassesAndInheritance\ClassesAndInheritance\obj\Debug\netcoreapp3.1\ClassesAndInheritance.AssemblyInfo.cs
+C:\Dev\repos\Lessons\ClassesAndInheritance\ClassesAndInheritance\obj\Debug\netcoreapp3.1\ClassesAndInheritance.csproj.CoreCompileInputs.cache
+C:\Dev\repos\Lessons\ClassesAndInheritance\ClassesAndInheritance\obj\Debug\netcoreapp3.1\ClassesAndInheritance.dll
+C:\Dev\repos\Lessons\ClassesAndInheritance\ClassesAndInheritance\obj\Debug\netcoreapp3.1\ClassesAndInheritance.pdb
+C:\Dev\repos\Lessons\ClassesAndInheritance\ClassesAndInheritance\obj\Debug\netcoreapp3.1\ClassesAndInheritance.genruntimeconfig.cache
