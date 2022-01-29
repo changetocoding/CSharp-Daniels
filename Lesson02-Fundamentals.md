@@ -12,6 +12,14 @@ Today we will cover the core of every programing language: Data types, control s
 - String
 - int, double, decimal, 
 - boolean
+```cs
+string str = "string";
+int value = 10; // integer/whole numbers
+bool test = true; // false
+double number = 0.1; // decimal points. Can add a d at end (1.1d) but not necessary. 64 bits
+float floatingPointNo = 0.1f; // notice f at end- 32 bits smaller
+decimal theDecimal = 0.1m; // notice m at end. Base 10 system so more accurate for financials
+```
 
 ### Data structures
 - Array: Collection of objects. Must be all same type. Cant change size once created
