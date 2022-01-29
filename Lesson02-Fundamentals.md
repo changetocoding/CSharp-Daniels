@@ -24,16 +24,16 @@ decimal theDecimal = 0.1m; // notice m at end. Base 10 system so more accurate f
 ### Data structures
 - Array: Collection of objects. Must be all same type. Cant change size once created
 ```cs
-// this is the shorthand
-var items = new string[] {"Hello", "World", "People"};
-
-
 var arr = new string[3];
 arr[0] = "a";
 arr[1] = "b";
 arr[2] = "c";
 arr[0] = "replace a with b";
 //arr[3] = "This throws an error because of the size";
+
+
+// this is the shorthand
+var items = new string[] {"Hello", "World", "People"};
 ```
 - List: Array but can add more items
 ```cs
