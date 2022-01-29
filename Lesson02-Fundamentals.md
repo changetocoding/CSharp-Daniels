@@ -14,11 +14,11 @@ Today we will cover the core of every programing language: Data types, control s
 - boolean
 
 ### Data structures
--Array: Collection of objects. Must be all same type. Cant change size once created
+- Array: Collection of objects. Must be all same type. Cant change size once created
 ```cs
 var items = new string[] {"Hello", "World", "People"};
 ```
--List: Array but can add more items
+- List: Array but can add more items
 ```cs
 var myList = new List<string>();
 myList.Add("Hello");
@@ -34,7 +34,14 @@ myList[0] = "Replace Hello with this";
 // get value 
 myList[0];
 ```
--Dict - Key to value mapping
+- Dictionary - Key to value mapping
+```
+var dictionary = new Dictionary<string, string>();
+dictionary.Add("David", "Nigeria");
+dictionary.Add("Tom", "England");
+dictionary.Add("Jin", "China");
+Console.WriteLine(dictionary["David"]); // Nigeria
+```
 
 
 ## Control statements
