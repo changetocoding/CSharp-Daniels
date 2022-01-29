@@ -1,4 +1,5 @@
 # Fundamentals - data structures (list, array, dicts)
+Today we will cover the core of every programing language: Data types, control statements and looping. This is common to most programming language
 
 ## Basics
 1. OO language - basically means everything must be an object
@@ -6,7 +7,7 @@
 
 
 
-## Data structures
+## Data types
 ### 'Primtives'
 - String
 - int, double, decimal, 
