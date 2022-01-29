@@ -94,11 +94,16 @@ Overriding vs overloading - will cover later
 
 # Homework: Fizz Buzz
 ### The Task:
-Create a console application that counts from 1 to a number the user specifies. 
-For each number output "This is X out of Y", where X is the current number, and Y is the number the user specified above.
-Any number divisible by three should be replaced by the word "fizz" instead.
-Any number divisible by five should be replaced by the word "buzz" instead. 
-Numbers divisible by 3 and 5 should be replaced by the word "fizz buzz".
+Create a console application that counts from 1 to a number the user specifies.  
+For each number output "This is X out of Y", where X is the current number, and Y is the number the user specified above.   
+Any number divisible by three should be replaced by the word "fizz" instead.  
+Any number divisible by five should be replaced by the word "buzz" instead.   
+Numbers divisible by 3 and 5 should be replaced by the word "fizz buzz".  
+
+The modulus (remainder) operator in c# is this
+```cs
+10 % 5
+```
 
 ### Sample output:
 > This is 1 out of 100  
