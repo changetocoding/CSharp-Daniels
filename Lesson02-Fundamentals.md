@@ -28,14 +28,14 @@ myList.Add("People");
 var myOtherList = new List<string>() { "Hello", "World", "People" };
 ```
 
-```
+```cs
 // set value for list/array 
 myList[0] = "Replace Hello with this";
 // get value 
 myList[0];
 ```
 - Dictionary - Key to value mapping
-```
+```cs
 var dictionary = new Dictionary<string, string>();
 dictionary.Add("David", "Nigeria");
 dictionary.Add("Tom", "England");
