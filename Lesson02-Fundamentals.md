@@ -10,7 +10,7 @@ Today we will cover the core of every programing language: Data types, control s
 ## Data types
 ### 'Primtives'
 - String
-- int, double, decimal, 
+- int, double, decimal, This explains why decimal is more accurate [here](https://betterprogramming.pub/why-is-0-1-0-2-not-equal-to-0-3-in-most-programming-languages-99432310d476)
 - boolean
 ```cs
 string str = "string";
