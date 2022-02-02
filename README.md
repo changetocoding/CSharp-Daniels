@@ -19,5 +19,9 @@ Course content
   - web api
 - Entity framework
 
+Missed from last course to cover:
+- Big O notation
+- Properties and Enums
+
 
 Useful resources:
