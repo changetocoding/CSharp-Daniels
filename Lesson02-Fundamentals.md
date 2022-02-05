@@ -133,9 +133,12 @@ The modulus (remainder) operator in c# is this
 
 # Homework 2: Custom Dictionary
 ### The Task:
-Create your own dictionary from scratch, including a hashing algorithm.
+Create your own dictionary from scratch, including a simple hashing algorithm.
+You can use one of these 2 algorithms to hash your key
+- The length of the key
+- The first character in the key converted to an int
 
 You should be able to store and retrieve Key:Value pairs.
 
-You  should include methods to Add and Remove new entries.
+You should include methods to Add new entry and Get an entry. Bonus points for adding a method to remove an entry.
 
