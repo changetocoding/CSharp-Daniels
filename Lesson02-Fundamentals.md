@@ -60,6 +60,15 @@ dictionary.Add("Jin", "China");
 Console.WriteLine(dictionary["David"]); // Nigeria
 ```
 
+Dictionaries are a generic collection. Like lists, they are dynamic and resize accordingly.
+Unlike lists though, data can be retieved using a key:value pair so you don't need to remember or find an index.
+
+It achieves this through the process of hashing the key (behind the scenes this the return value of the .[GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode?view=net-6.0) method). 
+This means that each key is stored as a unique integer, and when called using it's key value, for example the string "David", it's able to fetch that value directly utilising it's key - as opposed to searching each entry for a match, like it would when using a List.
+
+In the occurance of two hash results being the same, called a collision, the C# Dictionary will take care of this itself behind the scenes.
+
+![Hash Example](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg/1920px-Hash_table_3_1_1_0_1_0_0_SP.svg.png)
 
 ## Control statements
 ### If statement
@@ -122,5 +131,11 @@ The modulus (remainder) operator in c# is this
 > ...  
 
 
+# Homework 2: Custom Dictionary
+### The Task:
+Create your own dictionary from scratch, including a hashing algorithm.
 
+You should be able to store and retrieve Key:Value pairs.
+
+You  should include methods to Add and Remove new entries.
 
