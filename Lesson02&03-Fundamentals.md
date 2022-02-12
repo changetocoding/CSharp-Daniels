@@ -63,6 +63,7 @@ Console.WriteLine(dictionary["David"]); // Nigeria
 Dictionaries are a generic collection. Like lists, they are dynamic and resize accordingly.
 Unlike lists though, data can be retieved using a key:value pair so you don't need to remember or find an index.
 
+### How dictionary works
 It achieves this through the process of hashing the key (behind the scenes this the return value of the .[GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode?view=net-6.0) method). 
 This means that each key is stored as a unique integer, and when called using it's key value, for example the string "David", it's able to fetch that value directly utilising it's key - as opposed to searching each entry for a match, like it would when using a List.
 
@@ -133,9 +134,13 @@ The modulus (remainder) operator in c# is this
 
 # Homework 2: Custom Dictionary
 ### The Task:
-Create your own dictionary from scratch, including a simple hashing algorithm.
+Create your own dictionary from scratch, including a simple hashing algorithm. The dictionary should map a string key to a string value.
 
-The dictionary should map a string key to a string value.
+(see section on how dictionaries work)
+1. A dictionary is an array under the cover
+2. You will need to hash a key (convert it from a string to a number that is less than your array size). 
+3. You store the data at 
+
 
 You can use one of these 2 algorithms to hash your key:
 - The length of the key
