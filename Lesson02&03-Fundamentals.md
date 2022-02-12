@@ -146,15 +146,18 @@ You should be able to store and retrieve Key:Value pairs.
 You should include methods to Add new entry and Get an entry. Bonus points for adding a method to remove an entry.
 
 ```cs
-var dict = new DavidDictionary();
+var dict = new MyDictionary(); // DavidDictionary is the dictionary class you a
 dict.Add("Month", "Feb");
 dict.Add("Colour", "Red");
 dict.Get("Month"); // expect to return "Feb";
 dict.Get("Colour"); // expect to return "Red";
 dict.Add("Month", "Jan"); // override "Feb"
 dict.Get("Month"); // expect to return "Jan";
+```
 
 
+# Homework 3: Make your dictionary generic
+```cs
 var gendict = new DavidDictionary<string,string>();
 dict.Add("tete", "ttt");
 var gendict2 = new DavidDictionary<string, int>();
