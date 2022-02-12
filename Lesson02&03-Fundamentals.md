@@ -145,3 +145,19 @@ You should be able to store and retrieve Key:Value pairs.
 
 You should include methods to Add new entry and Get an entry. Bonus points for adding a method to remove an entry.
 
+```cs
+var dict = new DavidDictionary();
+dict.Add("Month", "Feb");
+dict.Add("Colour", "Red");
+dict.Get("Month"); // expect to return "Feb";
+dict.Get("Colour"); // expect to return "Red";
+dict.Add("Month", "Jan"); // override "Feb"
+dict.Get("Month"); // expect to return "Jan";
+
+
+var gendict = new DavidDictionary<string,string>();
+dict.Add("tete", "ttt");
+var gendict2 = new DavidDictionary<string, int>();
+dict.Add("tete", 1);
+```
+
