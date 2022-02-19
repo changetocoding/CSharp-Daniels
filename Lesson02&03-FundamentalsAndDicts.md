@@ -136,10 +136,12 @@ The modulus (remainder) operator in c# is this
 ### The Task:
 Create your own dictionary from scratch, including a simple hashing algorithm. The dictionary should map a string key to a string value.
 
+*Note you will never have to create your own dictionary. You will always use the C# dictionary. This excerise is just to teach you what is happening behind the scenes. You will use dictionaries so much it is useful to understand this, and it sometimes is asked in interviews.
+
 (see section on how dictionaries work)
 1. A dictionary is an array under the cover
 2. You will need to hash a key (convert it from a string to a number that is less than your array size). 
-3. You store the data at 
+3. You store the data at the index you get by hashing the key
 
 
 You can use one of these 2 algorithms to hash your key:
@@ -161,11 +163,4 @@ dict.Get("Month"); // expect to return "Jan";
 ```
 
 
-# Homework 3: Make your dictionary generic
-```cs
-var gendict = new DavidDictionary<string,string>();
-dict.Add("tete", "ttt");
-var gendict2 = new DavidDictionary<string, int>();
-dict.Add("tete", 1);
-```
 
