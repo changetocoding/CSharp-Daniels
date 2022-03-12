@@ -127,7 +127,7 @@ public class Program
 		};
 	
 	
-		//1. write linq display every name ordered alphabetically
+		//0. write linq display every name ordered alphabetically
 		
 		//1. write linq statement for the people with last name that starts with the letter D
 		//Console.WriteLine("Number of people who's last name starts with the letter D " + people1.Count());
