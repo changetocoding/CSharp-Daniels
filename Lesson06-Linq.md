@@ -93,9 +93,43 @@ namespace ConsoleApp32
                 .Select(x=> x.LastName)
                 .Last();
             Console.WriteLine(firstD);
+
+            var res = people.Select(x => x.LastName);
+
+            // OrderBy() by age
+            var orderby = people.
+                    OrderBy(x => x.Age)
+                .Select(x => $"{x.FirstName} has Age {x.Age}");
+
+            var lastName = people
+                .Where(x => x.LastName.StartsWith("D"))
+                .Select(x => $"FirstName {x.FirstName} has Age {x.Age}");
+
+            // Order of linq statements important here
+            var firstName = people.Where(x => x.LastName.StartsWith("D"))
+                .Select(x => x.FirstName);
+
+            // But not here
+            var lastNames = people
+                .Where(x => x.LastName.StartsWith("D"))
+                .Select(x => x.LastName);
+            // Or
+            var lastNames2 = people
+                .Select(x => x.LastName)
+                .Where(x => x.StartsWith("D"));
+
+            // $"{x.FirstName} has Age {x.Age}" // string
+            // x.FirstName + " has Age " + x.Age // string
+
+
+            foreach (var item in orderby)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
+
 
 ```
 
