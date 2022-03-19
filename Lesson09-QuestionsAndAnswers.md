@@ -61,3 +61,129 @@ Phonebook.cs
     }
 
 ```
+
+# Chess
+```cs
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var board = new Board();
+            board.Init();
+            board.DisplayBoard();
+            Console.WriteLine(board.GetLoc('b', 1));
+        }
+    }
+```
+board
+```cs
+    class Board
+    {
+        private List<List<string>> _board;
+        public Board()
+        {
+            _board = new List<List<string>>();
+            for (int x = 0; x < 8; x++)
+            {
+                var row = new List<string>();
+                for (int y = 0; y < 8; y++)
+                {
+                    row.Add(" ");
+                }
+                _board.Add(row);
+            }
+        }
+
+        public void Init()
+        {
+            PlaceBlackPieces();
+            PlaceWhitePieces();
+        }
+
+        public string GetLoc(char letter, int number)
+        {
+            // a1 == 0,0
+            var x = number - 1;
+            var y = 0;
+            switch (letter)
+            {
+                case 'b': 
+                    y = 1;
+                    break;
+                case 'c': 
+                    y = 2;
+                    break;
+                case 'd': 
+                    y = 3;
+                    break;
+                case 'e': 
+                    y = 4;
+                    break;
+                case 'f': 
+                    y = 5;
+                    break;
+                case 'g': 
+                    y = 6;
+                    break;
+                case 'h': 
+                    y = 7;
+                    break;
+                default:
+                    y = 0;
+                    break;
+            }
+
+            return _board[x][y];
+        }
+
+        private void PlaceWhitePieces()
+        {
+            for (int y = 0; y < 8; y++)
+            {
+                _board[1][y] = "wP";
+            }
+
+            _board[0][0] = "wR";
+            _board[0][1] = "wN";
+            _board[0][2] = "wB";
+            _board[0][3] = "wQ";
+            _board[0][4] = "wK";
+            _board[0][5] = "wB";
+            _board[0][6] = "wN";
+            _board[0][7] = "wR";
+        }
+
+        private void PlaceBlackPieces()
+        {
+            for (int y = 0; y < 8; y++)
+            {
+                _board[6][y] = "bP";
+            }
+
+            _board[7][0] = "bR";
+            _board[7][1] = "bN";
+            _board[7][2] = "bB";
+            _board[7][3] = "bQ";
+            _board[7][4] = "bK";
+            _board[7][5] = "bB";
+            _board[7][6] = "bN";
+            _board[7][7] = "bR";
+        }
+
+        public void DisplayBoard()
+        {
+            for (int x = 7; x >= 0; x--)
+            {
+                var row = $"{x+1}:";
+                for (int y = 0; y < 8; y++)
+                {
+                    row = row + $" {_board[x][y]}";
+                }
+
+                Console.WriteLine(row);
+            }
+            Console.WriteLine("   a  b  c  d  e  f  g  h");
+        }
+    }
+```
+
