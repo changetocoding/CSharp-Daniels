@@ -100,40 +100,40 @@ board
             PlaceWhitePieces();
         }
 
-        public string GetLoc(char letter, int number)
+        public ChessPoint GetCoordinate(char letter, int number)
         {
-            // a1 == 0,0
-            var x = number - 1;
-            var y = 0;
+            // a1 == 00
+            var row = number - 1;
+            var col = 0;
             switch (letter)
             {
                 case 'b': 
-                    y = 1;
+                    col = 1;
                     break;
                 case 'c': 
-                    y = 2;
+                    col = 2;
                     break;
                 case 'd': 
-                    y = 3;
+                    col = 3;
                     break;
                 case 'e': 
-                    y = 4;
+                    col = 4;
                     break;
                 case 'f': 
-                    y = 5;
+                    col = 5;
                     break;
                 case 'g': 
-                    y = 6;
+                    col = 6;
                     break;
                 case 'h': 
-                    y = 7;
+                    col = 7;
                     break;
                 default:
-                    y = 0;
+                    col = 0;
                     break;
             }
 
-            return _board[x][y];
+            return new ChessPoint(row, col);
         }
 
         private void PlaceWhitePieces()
