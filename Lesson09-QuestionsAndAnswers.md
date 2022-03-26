@@ -72,6 +72,9 @@ Phonebook.cs
             board.Init();
             board.DisplayBoard();
             Console.WriteLine(board.GetLoc('b', 1));
+            board.MovePiece("wP", "e2", "e4");
+            board.MovePiece("bP", "d7", "d5");
+            board.AttackPiece("wP", "e4", "d5");
         }
     }
 ```
@@ -99,6 +102,20 @@ board
             PlaceBlackPieces();
             PlaceWhitePieces();
         }
+        
+        public void MovePiece(string pieceName, string from, string to){
+          // Todo: Move a piece
+          
+          // Todo: Make sure move is legal if it is a pawn
+         
+        } 
+        
+        
+          // Todo: How to attack
+       public void AttackPiece(string pieceName, string from, string to){
+
+        
+        } 
 
         public ChessPoint GetCoordinate(char letter, int number)
         {
