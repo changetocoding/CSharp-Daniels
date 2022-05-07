@@ -27,3 +27,7 @@ Classes are contracts. Instance is object you can play with.
 ```
 
 ## Static vs instance methods
+
+
+## Homework
+Create a class that keeps track of how many times its been called
