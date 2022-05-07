@@ -15,4 +15,15 @@ public class Class2
         }
     }
 
+```
+In C# classes and methods names begin with capitals
+
+#
+Classes are contracts. Instance is object you can play with.
+
+## To create an instance
 ```cs
+            var it = new Class2();
+```
+
+## Static vs instance methods
