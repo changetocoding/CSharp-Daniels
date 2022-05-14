@@ -41,12 +41,12 @@ Total is: 60
 The stores want to track additional information about the products. Such as weight and Product Type.
 
 Update your solution to use a Product class to represent the products:
-A - price:50, weight: 2, type: Electronics 
-B - price:30, weight: 20, type: Household Goods 
+A - price:50, weight: 2, type: Electronics  
+B - price:30, weight: 20, type: Household Goods   
 C - price:20, weight: 10, type: Groceries  
-D - price:5, weight: 1, type: Groceries 
-E - price:8, weight: 1.2, type: Groceries 
-F - price:25, weight: 1, type: Alcohol 
+D - price:5, weight: 1, type: Groceries   
+E - price:8, weight: 1.2, type: Groceries   
+F - price:25, weight: 1, type: Alcohol   
 
 And output the categories and total weight of the products
 
