@@ -2,7 +2,7 @@
 
 Your boss asks you to build a checkout counter (such as in a super market).
 
-We sell products with the following prices:
+We sell products with the following prices:  
 A:50, B:30, C:20, D:5
 
 ## Task 1
