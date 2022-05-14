@@ -57,6 +57,27 @@ HOW TO PULL A PROJECT FROM GITHUB TO VSCODE (CLONING A REPOSITORY FROM GITHUB)
 
 Note: You can follow same process to clone the repository of someone else
 
+## Github
+Surprisingly hard to teach.
+Think should split so step by step walk through steps of how to create a repositiory on github  
+Clone that repository locally  
+Add a file to it  
+Commit set up stream then push to it  
+
+Then update file in vs code  
+Stage the file commit  
+Push it
+
+Then update file again/add a new file  
+Repeat same in git hub  
+
+Then repeat in command line.
+
+Must read by tutors & practitioners. These two links may help trainers come up with content for the lesson:
+- https://dev.to/tracycss/git-and-github-for-beginners-po3  
+- https://dev.to/ravirajthedeveloper/what-is-git-and-github-and-how-to-use-github-2mb1  
+- https://dev.to/chrisachard/confused-by-git-here-s-a-git-crash-course-to-fix-that-4cmi  
+- And this explained the concepts well: https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html  
 
 # Recommendations
 - Additional notes
