@@ -40,7 +40,7 @@ Total is: 60
 # Task 4 
 The stores want to track additional information about the products. Such as weight and Product Type.
 
-Update your solution to use a Product class to represent the products:
+Update your solution to use a Product class to represent the products:  
 A - price:50, weight: 2, type: Electronics  
 B - price:30, weight: 20, type: Household Goods   
 C - price:20, weight: 10, type: Groceries  
