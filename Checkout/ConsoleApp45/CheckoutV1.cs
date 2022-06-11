@@ -55,13 +55,16 @@ namespace CheckOut
             var itemsByProduct = items.GroupBy(x => x).Select(x => new ItemAndCount() { Item = x.Key, Count = x.Count()});
             foreach (var itemAndCount in itemsByProduct)
             {
+                totalCost += _products[itemAndCount.Item] * itemAndCount.Count;
+
+                // Apply discount
                 if (itemAndCount.Item == 'B')
                 {
-                    totalCost += _products[itemAndCount.Item] * (itemAndCount.Count / 2);
+                    totalCost -= _products[itemAndCount.Item] * (itemAndCount.Count / 2);
                 }
-                else
+                if (itemAndCount.Item == 'D')
                 {
-                    totalCost += _products[itemAndCount.Item] * itemAndCount.Count;
+                    totalCost -= _products[itemAndCount.Item] * (itemAndCount.Count / 3);
                 }
             }
             return totalCost;
@@ -88,15 +91,13 @@ namespace CheckOut
 
             foreach (var itemAndCount in countByProduct)
             {
+                totalCost += _products[itemAndCount.Key] * itemAndCount.Value;
+
+                // Apply discount
                 if (itemAndCount.Key == 'B')
                 {
-                    totalCost += _products[itemAndCount.Key] * (itemAndCount.Value / 2);
+                    totalCost -= _products[itemAndCount.Key] * (itemAndCount.Value / 2);
                 }
-                else
-                {
-                    totalCost += _products[itemAndCount.Key] * itemAndCount.Value;
-                }
-
             }
             return totalCost;
         }

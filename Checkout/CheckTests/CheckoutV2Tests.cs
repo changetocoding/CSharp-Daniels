@@ -59,7 +59,6 @@ namespace CheckTests
             var result = checkout.Calc("BBB");
 
             Assert.That(result.Total, Is.EqualTo(60));
-            Assert.That(result.Weight, Is.EqualTo(60));
         }
 
         [Test]

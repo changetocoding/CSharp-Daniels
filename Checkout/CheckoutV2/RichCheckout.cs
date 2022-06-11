@@ -15,23 +15,25 @@ namespace CheckoutV2
             var totalWeight = 0d;
             List<string> categories = new List<string>();
 
-            foreach (var item in items)
+            var itemsByProduct = items.GroupBy(x => x).Select(x => new ItemAndCount() { Item = x.Key, Count = x.Count() });
+            foreach (var itemAndCount in itemsByProduct)
             {
-                var product =  _products[item];
-                totalCost += product.Price;
-                totalWeight += product.Weight;
+                var product = _products[itemAndCount.Item];
+                totalWeight += product.Weight * itemAndCount.Count;
+                totalCost += _products[itemAndCount.Item].Price * itemAndCount.Count;
                 categories.Add(product.Type);
+
+                if (itemAndCount.Item == 'B')
+                { 
+                    // discount
+                    totalCost -= _products[itemAndCount.Item].Price * (itemAndCount.Count / 2);
+                }
+                if (itemAndCount.Item == 'D')
+                {
+                    // discount
+                    totalCost -= _products[itemAndCount.Item].Price * (itemAndCount.Count / 3);
+                }
             }
-
-            // Different ways to do this. More efficently too. But this is simplest way I could do it that is understandable
-            // We do loop through array 3 times
-            var allB = items.Count(x => x == 'B');
-            var bToDiscount = ((allB / 2)) * _products['B'].Price; // We don't cast as want int rounding down
-            totalCost -= bToDiscount;
-
-            var allD = items.Count(x => x == 'D');
-            var dToDiscount = ((allD / 3)) * _products['D'].Price; // We don't cast as want int rounding down
-            totalCost -= dToDiscount;
 
 
             // I meant buy 10 or more items haha but looking at instructions you did it right :)
@@ -56,7 +58,12 @@ namespace CheckoutV2
         public decimal Total { get; set; }
         public double Weight { get; set; }
         public string Categories { get; set; }
+    }
 
 
+    class ItemAndCount
+    {
+        public char Item { get; set; }
+        public int Count { get; set; }
     }
 }
