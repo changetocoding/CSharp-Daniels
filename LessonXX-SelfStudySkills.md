@@ -8,10 +8,9 @@ Sources in order
 Stackoverflow. Search shit tho so use Google 
 2. Ms documentation
 3. Tutorial. If can find one jackpot. Or find one that does something similar to what you want to do. Follow it word for word and do it exactly how they do. Then think what can I take from this and reuse
+<img src="https://user-images.githubusercontent.com/63453969/176162656-34710c9b-dee6-4ec4-9ac9-e28a363ff9da.png" width="400" />
+5. Google search
 
 Never just copy code. At the very least create a new test project and try it out in there. Or a unit test. Only when you understand it enough do you use it  
-<img src="https://i.pinimg.com/originals/36/66/b4/3666b4910d20541fe5805c6cfd613131.jpg" width="200" />
+<img src="https://i.pinimg.com/originals/36/66/b4/3666b4910d20541fe5805c6cfd613131.jpg" width="400" />
 
-
-
-![image](https://user-images.githubusercontent.com/63453969/176162656-34710c9b-dee6-4ec4-9ac9-e28a363ff9da.png)
