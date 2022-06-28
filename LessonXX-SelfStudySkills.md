@@ -1,4 +1,4 @@
-# Self Learn Skills
+# Self Study Skills
 
 You are coder. You will get stuck. It happens with alarming frequency. Have no fear
 ![Code Doesn't work](https://i.pinimg.com/736x/11/d2/c5/11d2c50b5172634115bc0ec8527bd9d3.jpg)
