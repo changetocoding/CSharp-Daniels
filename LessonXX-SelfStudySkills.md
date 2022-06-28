@@ -10,6 +10,13 @@ Sources in order
 <img src="https://user-images.githubusercontent.com/63453969/176162656-34710c9b-dee6-4ec4-9ac9-e28a363ff9da.png" width="400" />
 4. Google search
 
-Never just copy code. At the very least create a new test project and try it out in there. Or a unit test. Only when you understand it enough do you use it  
+**Never just copy code. At the very least create a new test project and try it out in there. Or a unit test. Only when you understand it enough do you use it.**
+
+## Bugfixing
 <img src="https://i.pinimg.com/originals/36/66/b4/3666b4910d20541fe5805c6cfd613131.jpg" width="400" />
+
+What to do when you get an error?
+
+1. Debug to where the error is happening. Have a look at the variables: Maybe something is not set up properly
+2. Google that error. Copy the full error message (minus the bits that are from your code and search it). Normally someone has had the same error
 
