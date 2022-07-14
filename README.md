@@ -1,5 +1,10 @@
 # CSharp-Daniels
 
+## To enable multiple users
+```
+- git config --global credential.github.com.usehttppath true
+```
+This forces git to set up credentials for each repo you checkout rather than 1 for all of github
 
 ## Proposed structure
 - Lesson 1: Go through different data types and make sure everyone is comfortable with them
