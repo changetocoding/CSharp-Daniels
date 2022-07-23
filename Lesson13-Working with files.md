@@ -65,15 +65,15 @@ foreach (var line in lines)
 
 ```
 
-```
-            string[] lines = File.ReadAllLines(path);
-            var contacts = new List<Contact>();
-            foreach (var line in lines)
-            {
-                var spilt = line.Split(",");
-                var contact = new Contact() {Name = spilt[0], Number = long.Parse(spilt[1])};
-                contacts.Add(contact);
-            }
+```cs
+string[] lines = File.ReadAllLines(path);
+var contacts = new List<Contact>();
+foreach (var line in lines)
+{
+    var spilt = line.Split(",");
+    var contact = new Contact() {Name = spilt[0], Number = long.Parse(spilt[1])};
+    contacts.Add(contact);
+}
 ```
 ```contact.cs
     public class Contact
