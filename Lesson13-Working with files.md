@@ -14,8 +14,16 @@ public class MyClass : IDisposable{}
 # Files
 
 ## Locating/ Working with
+'\' is an escape character. But @"" means ignored
+```csharp
+Console.WriteLine("Hello World!\nCreates a new line\tTab");
+```
 
 ```csharp
+var files = Directory.GetFiles("C:\\Dev\\temp");
+files = Directory.GetFiles(@"C:\Dev\temp");
+
+
 Directory.GetFiles(path); // Returns a list of FileInfo
 
 Path.Combine(dir, filename);
