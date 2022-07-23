@@ -60,8 +60,7 @@ Then new File api: simpler. No need to remember to close stream
 var lines = File.ReadAllLines(_path);
 foreach (var line in lines)
 {
-	// Here I convert into my own class
-	yield return MyClass.Parse(line);   // Using  a Parse method as C# way of converting text to object. Could have just done through constructor but constructors throwing exceptions is a bit contraverious. I'm for it (You should not be allowed to create a class in a bad state) but some ppl are against it.
+	Console.WriteLine(line);
 }
 
 ```
