@@ -14,7 +14,7 @@ public class MyClass : IDisposable{}
 # Files
 
 ## Locating/ Working with
-'\' is an escape character. But @"" means ignored
+'\\' is an escape character. But @"" means ignored
 ```csharp
 Console.WriteLine("Hello World!\nCreates a new line\tTab");
 ```
