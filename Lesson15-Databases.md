@@ -1,8 +1,22 @@
 # Entity framework 2
 
-### Querying
-.Where()  
-.Any()  
+### Adding a record and Querying
+```csharp
+            // Adding a record
+            using (var dbContext = new GsaContext())
+            {
+                var newuser = new User() {Email = "Test", Name = "Name"};
+                dbContext.Users.Add(newuser);
+                dbContext.SaveChanges();
+            }
+
+
+            // Querying
+            using (var dbContext = new GsaContext())
+            {
+                var users = dbContext.Users.Where(x => x.Name == "Tom").ToList();
+            }
+```
 
 ### Updating a record
 ```csharp
