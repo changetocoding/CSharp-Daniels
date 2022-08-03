@@ -52,7 +52,7 @@ You can automatically generate the c# code for a db table using scaffolding
 https://docs.microsoft.com/en-us/ef/core/managing-schemas/scaffolding?tabs=dotnet-core-cli
 
 1. Set db project SwiftProposal.Data as startup project
-2. Open up Package Manager Console
+2. Open up Package Manager Console (Tools > nugget package manager > package manager console)
 3. Set default project in the package manager window to SwiftProposal.Data 
 4. Run below
 ```
