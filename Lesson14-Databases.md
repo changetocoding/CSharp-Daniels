@@ -22,9 +22,15 @@ So much code writing. EF solves it.
 EF6 is the entity framework for .net framework projects (old .net)
 EFCore is for .net core projects. 
 
-They are dev'd in parallel but there are big breaking changes between them. We will focus on EFCore
+They are dev'd in parallel but there are big breaking changes between them. We will focus on EFCore.
+
+From .net6 forward you will need to use EFcore
+## Project setup
+Create a db project with these libraries:
+![image](https://user-images.githubusercontent.com/63453969/182610077-fae29d0d-08ad-4a4e-9277-f912de292d58.png)
 
 
+## Pop quiz
 You already know alot of this so please explain:
 1. Connection Strings 
 2. Db context
